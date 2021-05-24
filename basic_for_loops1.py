@@ -10,7 +10,7 @@ for x in range(5, 1000, 5):
 # 3 Counting, the Dojo Way 
 for i in range(1,100): # Numbers between 1 and 100
     if i % 5 == 0:
-# If i is divisible by 5 then print it
+# If i is divisible by 5 then print this:
         print("Coding")
   elif i % 10 == 0:
   print("Coding Dojo")
