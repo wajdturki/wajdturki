@@ -1,6 +1,7 @@
 #import pandas as pd
 
-# load University dataset UCI, Downloded to myDesk from this link: https://archive.ics.uci.edu/ml/datasets/University
+#1 load University dataset UCI, Downloded to myDesk from this link: https://archive.ics.uci.edu/ml/datasets/University
+
 #Attribute Information:
 #1. University-name 
 #2. State 
@@ -33,6 +34,13 @@ dataset.columns = ['University-name', 'State',  'location',
                    'quality-of-life','academic-emphasis']
 dataset.head()
 
+#Deleting columns:
+
+print("The DataFrame object before change")
+print(df)
+del df['expenses','quality-of-life'] #Deleting expenses,quality-of-life columns then print it
+print("The DataFrame object after deleting the 2 columns ")
+print(df)
 
 #---------------------------the same way to loading 2 dataset .csv
 
@@ -64,7 +72,7 @@ age= ("adult", "child")
 print("The DataFrame object before deleting the column")
 print(df)
 del df['size'] #Deleting Size colum then print it
-print("The DataFrame object after deleting the column a")
+print("The DataFrame object after deleting the column size")
 print(df)
 
 
