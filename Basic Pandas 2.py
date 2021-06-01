@@ -112,6 +112,16 @@ ds_median = dataset.median(axis = 1, skipna = True, numeric_only = True)
 ds_mode = dataset.mode(numeric_only = True)   
 
 
+### sum for all numerical columns ### 
+
+ds_sum = dataset.sum(numeric_only = True)
+
+
+### count for all columns ###
+
+ds_count = dataset.count(axis='columns')
+
+
 ### Subset your DataFrame based on one condition ###
 
 # When I have only one condition, I Used: np.where 
